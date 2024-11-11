@@ -418,6 +418,141 @@ input:focus{
     cursor: pointer;
 }
 
+/* cart items */
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #090808;
+    background: #f107b3;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #f107b3;
+    width: 100%;
+    max-width: 380px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+/* account page */
+ .account-page{
+        padding: 50px 0;
+        background: radial-gradient(#fff,#f651c2);
+ }
+ .form-container{
+    background: #f838eb;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px #59595b;
+ }
+.form-container span{
+    font-weight:bold;
+    padding: 0 10px;
+    color: #f8f5f5;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top:130px;
+    transition: transform 1.5s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid #CCC;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+form .btn:focus{
+    outline:none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #0a0a0a;
+    height: 3px;
+    margin-top:8px ;
+    transform: translateX(100px);
+    transition: transform 1.5s;
+}
+
 
 
 
@@ -429,5 +564,22 @@ input:focus{
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
     }
+
+    .single-product .row{   
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+        line-height: 32px;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+
 }
 
